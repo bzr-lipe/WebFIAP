@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-main: #e53170;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.nav-page {
+    background-color: #000000;
+    height: 92px;
+    width: 100%;
+    border-bottom: 6px solid var(--color-main);
+    color: #FFFFFF;
+    display: flex;
+    
+}
+
+.titulo {
+    font-size: 50px;
+    margin: auto 35px;
+}
+
+
+.titulo span {
+    color: var(--color-main);
+}
+
+
+nav {
+    display: flex;
+    margin: 0 35px 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 20px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--color-main);
+    font-size: 15px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    color: #FFFFFF;
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-size: 80px;
+}
+
+.objetivo-text {
+    font-size: 30px;
+    align-items: center;
+    margin: auto 0 auto 3%;
+}
+
+.armas-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    align-items: flex-end;
+    text-align: right;
+    margin: auto 3% auto ;
+}
+.team-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+.team-span::after{
+    content: "Felipe Bezerra da Silva";
+    color: var(--color-primary);
+    animation: solutions 8s infinite ;
+}
+
+@keyframes solutions {
+    
+    25% {
+        content: 'Alice Calisti de Souza';
+        
+    }
+
+    50% {
+        content: 'Abner Aragon';
+    }
+
+    75% {
+        content: 'Rodrigo Felipe da Silva Scorsi';
+    }
+}
+
+.rm-span::after{
+    content: "RM 95599";
+    color: var(--color-primary);
+    animation: rm 8s infinite ;
+}
+
+@keyframes rm {
+    
+    25% {
+        content: 'RM 95808';
+        
+    }
+
+    50% {
+        content: 'RM 95620';
+    }
+
+    75% {
+        content: 'RM 94399';
+    }
+}
+p {
+    width: 50%;
+}
+
+.bg-image1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0,0,0, .9)),
+    url(../images/photo1.jpg);
+}
+.bg-image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0, .8)),
+    url(../images/photo2.jpg);
+}
+.bg-image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0,0,0, .9)),
+    url(../images/photo3.jpg);
+}
+
