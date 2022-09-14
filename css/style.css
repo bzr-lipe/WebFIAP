@@ -1,0 +1,46 @@
+:root {
+    --color-main:#d9376e;
+    --color-background: #0d0d0d;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+.macrobot-header {
+    display: flex;
+    background-color: var(--color-background);
+    text-align: center;
+    border-bottom: 5px solid var(--color-main);
+}
+
+.macrobot-header span, p {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.macrobot-header p {
+    color: var(--white);
+}
+
+.macrobot-header span {
+    color: var(--color-main);
+}
+
+nav {
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: var(--color-main);
+}
